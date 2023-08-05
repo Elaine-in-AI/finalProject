@@ -121,9 +121,15 @@ row {
 }
 
 .image-container {
+    max-height: 200px;
     object-fit: cover;
     height: 100%;
     width: auto;
+}
+
+#why-StillFresh {
+    align-items: center;
+    padding: 4%;
 }
 
 .register-title {
