@@ -2,6 +2,7 @@ body {
     font-family: 'PT Serif', serif;
     background-color: #210B2C;
     color: #E8E9EB;
+    margin: 0 !important;
 }
 
 .sticky-header {
@@ -39,19 +40,21 @@ body {
 }
 
 .about-section {
-    margin-top: 8%;
-    padding-top: 5%;
+    padding-top: 7%;
+    padding-bottom: 3%;
+    padding-left: 4%;
+    padding-right: 4%;
     background-color: #E8E9EB;
     color: #210B2C;
     text-align: center;
 }
 
-.about-section p {
-    margin-bottom: 0px;
+.about-section h1 {
+    color: #3E5641;
+    padding-bottom: 20px;
 }
 
 #about-container {
-    padding-top: 6%;
     background-color: #E8E9EB;
     color: #B2E6D4;
 }
@@ -61,11 +64,12 @@ body {
 }
 
 #about-container p {
-    color: #3E5641; 
+    color: #210B2C; 
 }
 
 .registration-section {
     margin-top: 8%;
+    margin-bottom: 3%;
     color: #EF6461;
     background-color: #210B2C;
     text-align: center;
@@ -73,10 +77,13 @@ body {
 
 #registration-container {
     margin-bottom: 8%;
+    padding-left: 10%;
+    padding-right: 10%;
 }
 
 #registration-container h2 {
     margin-bottom: 25px;
+    font-size: 24px;
 }
 
 #registration-container select {
@@ -105,27 +112,59 @@ li.checkbox {
     border: 0px;
 }
 
-row {
+.checkbox a {
+    color: #B2E6D4;
+}
+
+.row {
     display: flex;
     flex-direction: row;
-    align-items: center;
+    align-items: top;
     justify-content: space-around;
 }
 
-.container.col-md-4 {
-    padding: 2%;
-    margin-bottom: 15%;
+.container {
+    max-width: 100%;
+}
+
+.container .col-md-4 {
+    padding: 4%;
+    margin-bottom: 6%;
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
-.image-container {
+
+
+.img-fluid {
     max-height: 200px;
     object-fit: cover;
     height: 100%;
     width: auto;
+    margin-bottom: 10px;
 }
+
+.card-img-top {
+    max-height: 200px;
+    object-fit: cover;
+    width: 100%;
+    margin-bottom: 20px;
+}   
+
+.card-title {
+    color: #3E5641;
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+  
+.container #why-container p {
+    text-align: center;
+    padding-left: 10%;
+    padding-right: 10%;
+    font-size: 24px;
+  }
 
 #why-StillFresh {
     align-items: center;
@@ -139,6 +178,7 @@ row {
 .emphasis {
     text-align: center;
     margin-top: 4%;
+    margin-bottom: 3%;
     color: #E8E9EB;
 }
 
@@ -152,10 +192,15 @@ row {
     text-align: center;
 }
 
+.link-login {
+    color: #B2E6D4;
+}   
+
 input {
     background-color: #210B2C;
     color:#E8E9EB;
     border: 0px;
+    width: 100%;
 }
 
 form {
@@ -166,6 +211,7 @@ form {
 }
 
 .signup-btn {
+    font-size: 20px;
     background-color: #EF6461;
     color: #E8E9EB;
     border: none;
@@ -182,11 +228,15 @@ form {
     border: 1px solid #EF6461;
 }
 
-.footer {
+footer {
     background-color: #E8E9EB;
     color: #210B2C;
-    width: 100%;
-    bottom: 0;
+    padding-top: 4%;
+}
+
+#footer-about {
+    padding-top: 0 !important;
+    margin-bottom: 0 !important;
 }
 
 #footer-socialmedia {

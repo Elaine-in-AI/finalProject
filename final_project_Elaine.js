@@ -5,6 +5,7 @@
 
         // Get the form elements
         const form = event.target;
+
         const inputs = form.querySelectorAll('input, select');
         const checkboxes = form.querySelectorAll('input[type="checkbox"]');
         let isValid = true;
@@ -39,7 +40,7 @@
     }
 
 
-    const signupButtons = document.querySelectorAll('.signup-btn');
-    signupButtons.forEach(button => {
-        button.addEventListener('click', validateForm);
+    const forms = document.querySelectorAll('form')
+  forms.forEach(form => {
+      form.addEventListener('submit', validateForm);
     });

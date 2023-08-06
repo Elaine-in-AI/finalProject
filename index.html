@@ -20,7 +20,7 @@
             <ul class="row">
                 <li class="col-sm-12 col-md-2"><img src="" alt="">Logo</li>
                 <li class="col-sm-12 col-md-2">
-                    <a href="#Why-StillFresh">Why StillFresh</a>
+                    <a href="#why-StillFresh">Why StillFresh</a>
                 </li>
                 <li class="col-sm-12 col-md-2">
                     <a href="#About-StillFresh">About StillFresh</a>
@@ -38,7 +38,7 @@
         </nav>
     </header>
 
-    <section class="why-section">
+    <section class="why-section" id="why-StillFresh">
         <h2>Food waste is a big problem in Australia, but</h2>
         <h1>HOW BIG?</h1>
     </section>
@@ -48,17 +48,17 @@
     </section>
 
     <div class="container" id="why-container">
-        <div class="row" id="why-StillFresh">
+        <div class="row">
             <div class="col-md-4">
-                <img src="https://media-public.canva.com/rXOhA/MADhH9rXOhA/3/tl.png" alt="" class="img-fluid d-block image-container">
+                <img src="https://media-public.canva.com/rXOhA/MADhH9rXOhA/3/tl.png" alt="" class="img-fluid d-block" id="lettuce">
                 <p><span class="highlight">70%</span> of them are perfectly edible.</p>
             </div>
             <div class="col-md-4">
-                <img src="https://media-public.canva.com/BSeNc/MADhH8BSeNc/3/tl.png" alt="" class="img-fluid d-block image-container">
+                <img src="https://media-public.canva.com/BSeNc/MADhH8BSeNc/3/tl.png" alt="" class="img-fluid d-block">
                 <p>Responsible for <span class="highlight">3%</span> of Australia's annual greenhouse gas emissions.</p>
             </div>
             <div class="col-md-4">
-                <img src="https://media-public.canva.com/MADpulKU5fI/1/thumbnail_large.png" alt="" class="img-fluid d-block image-container">
+                <img src="https://media-public.canva.com/MADpulKU5fI/1/thumbnail_large.png" alt="" class="img-fluid d-block">
                 <p>Costing the Australian economy over <span class="highlight">$36.6 billion</span> every year, i.e. <span class="highlight">$1,464</span> per person.</p>
             </div>
         </div>
@@ -68,24 +68,34 @@
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus praesentium id nisi iure labore consequatur, vel totam laboriosam dolores minima dolor debitis doloremque ullam distinctio assumenda atque consequuntur. Deserunt, ad. Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque quam perspiciatis saepe magnam harum sit voluptas tempora quod corrupti ea esse, mollitia aliquam placeat ducimus officiis nam ullam deleniti tenetur. Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt et atque natus vel harum reiciendis earum sed assumenda pariatur ipsa nihil ex tenetur ipsam inventore quos ipsum id, nam itaque.</p>
     </div>
 
-    <div class="container-fluid" id="about-container">
+    <div class="container" id="about-container">
         <div class="row">
-            <div class="col-md-4">
-                <h2>For food growers/suppliers</h2>
-                <p>Turn unsold food/due to expire food to extra revenue</p>
-            </div>
-            <div class="col-md-4">
-                <h2>For consumers</h2>
-                <p>Spend as less as 1/3 of original prices on foods that are StillFresh</p>
-            </div>
-            <div class="col-md-4">
-                <h2>For Australia</h2>
-                <p>Becoming greener; Saving more lives; Saving more money</p>
+            <div class="col-md-4" class="card">
+                <img src="https://images.unsplash.com/photo-1592503254549-d83d24a4dfab?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1632&q=80" class="card-img-top" alt="">
+                <div class="card-body">
+                  <h5 class="card-title">For food growers/suppliers</h5>
+                  <p class="card-text">Turn unsold/due-to-expire food to extra revenue</p>
+                </div>
+              </div>
+            <div class="col-md-4" class="card">
+                <img src="https://images.unsplash.com/photo-1591100063300-7b8956e7cb51?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1171&q=80" class="card-img-top" alt="">
+                <div class="card-body">
+                  <h5 class="card-title">For consumers</h5>
+                  <p class="card-text">Spend as less as 1/3 of original prices on foods that are StillFresh</p>
+                </div>
+              </div>
+            
+            <div class="col-md-4" class="card">
+                <img src="https://images.unsplash.com/photo-1572492887328-4d2ecd6375cc?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1084&q=80" class="card-img-top" alt="">
+                <div class="card-body">
+                  <h5 class="card-title">For Australia</h5>
+                  <p class="card-text">Becoming greener; Saving more lives; Saving more money</p>
+                </div>
             </div>
         </div>
     </div>
 
-    <section class="registration-section">
+    <section class="registration-section" id="Register">
         <h1>Want to contribute?</h1>
     </section>
 
@@ -93,7 +103,7 @@
         <div class="row">
             <div class="col">
                 <h2 class="register-title">Register as food growers/suppliers</h2>
-                <form action="">
+                <form class="register" action="">
                     <ul>
                         <li>
                             <select name="business-industry" id="business-industry" placeholder="Industry">
@@ -128,10 +138,14 @@
                             <input type="text" name="business-email" id="business-email" placeholder="Email address">
                         </li>
                         <li class="checkbox">
-                            <input type="checkbox" id="policy-agreement">I accept the StillFresh T&C and privacy policy.<a href=""></a>
+                            <label for="policy-agreement">
+                            <input type="checkbox" id="policy-agreement">
+                            I accept the StillFresh <a href="#terms-conditions"> T&C </a> and <a href="#privacy-policy">privacy policy </a>.</label>
                         </li>
                         <li class="checkbox">
+                            <label for="newsletter-subscription">
                             <input type="checkbox" id="newsletter-subscription">I agree to receive StillFresh newsletter. I can unsubscribe at any time.
+                            </label>
                         </li>
                     </ul>
                     <button type="submit" class="signup-btn">Express interest</button>
@@ -143,7 +157,7 @@
         
             <div class="col">
                 <h2 class="register-title">Register as users</h2>
-                <form action="">
+                <form class="register" action="">
                     <ul>
                         <li>
                             <select value="" class="user-salutation">
@@ -178,10 +192,14 @@
                             <input type="text" name="user-email" id="user-email" placeholder="Email address">
                         </li>
                         <li class="checkbox">
-                            <input type="checkbox" id="policy-agreement">I accept the StillFresh T&C and privacy policy.<a href=""></a>
+                            <label for="policy-agreement">
+                            <input type="checkbox" id="policy-agreement">
+                            I accept the StillFresh <a href="#terms-conditions"> T&C </a> and <a href="#privacy-policy">privacy policy </a>.</label>
                         </li>
                         <li class="checkbox">
+                            <label for="newsletter-subscription">
                             <input type="checkbox" id="newsletter-subscription">I agree to receive StillFresh newsletter. I can unsubscribe at any time.
+                            </label>
                         </li>
                     </ul>
                     <button type="submit" class="signup-btn">Join waiting list</button>
@@ -193,7 +211,7 @@
 
             <div class="col">
                 <h2 class="register-title">Register as volunteer</h2>
-                <form action="">
+                <form class="register" action="">
                     <ul>
                         <li>
                             <select value="" class="volunteer-salutation">
@@ -228,10 +246,14 @@
                             <input type="text" name="volunteer-email" id="volunteer-email" placeholder="Email address">
                         </li>
                         <li class="checkbox">
-                            <input type="checkbox" id="policy-agreement">I accept the StillFresh T&C and privacy policy.<a href=""></a>
+                            <label for="policy-agreement">
+                            <input type="checkbox" id="policy-agreement">
+                            I accept the StillFresh <a href="#terms-conditions"> T&C </a> and <a href="#privacy-policy">privacy policy </a>.</label>
                         </li>
                         <li class="checkbox">
+                            <label for="newsletter-subscription">
                             <input type="checkbox" id="newsletter-subscription">I agree to receive StillFresh newsletter. I can unsubscribe at any time.
+                            </label>
                         </li>
                     </ul>
                     <button type="submit" class="signup-btn">Express interest</button>
@@ -244,7 +266,7 @@
     </div>
 
     <footer class="footer">
-    <div class="container-fluid" id="footer-container">
+    <div class="container" id="footer-container">
         <div class="row">
             <div class="col-md-4" id="footer-about">
                 <p>Logo</p>
@@ -253,8 +275,8 @@
             </div>
             <div class="col-md-3" id="footer-docs">
                 <p>StillFresh reports</p>
-                <p>Privacy policy</p>
-                <p>T&C</p>
+                <p id="privacy-policy">Privacy policy</p>
+                <p id="terms-conditions">T&C</p>
             </div>
             <div class="col-md-3" id="footer-contact">
                 <p>Support us</p>
