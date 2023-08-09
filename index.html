@@ -16,25 +16,33 @@
 
 <body>
     <header class="sticky-header">
-        <nav class="header-nav" class="container">
-            <ul class="row">
-                <li class="col-sm-12 col-md-2"><img src="" alt="">Logo</li>
-                <li class="col-sm-12 col-md-2">
-                    <a href="#why-StillFresh">Why StillFresh</a>
-                </li>
-                <li class="col-sm-12 col-md-2">
-                    <a href="#About-StillFresh">About StillFresh</a>
-                </li>
-                <li class="col-sm-12 col-md-2">
-                    <a href="#Register">Register</a>
-                </li>
-                <li class="col-sm-12 col-md-2">
-                    <a href="#Cooking-for-fun">Cooking For Fun</a>
-                </li>
-                <li class="col-sm-12 col-md-2">
-                    <a href="#Download-the-App">Download the App</a>
-                </li>
-            </ul>
+        <nav class="header-nav navbar navbar-expand-lg bg-body-tertiary">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">Logo</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="row navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item col-sm-12 col-md-2">
+                        <a href="#why-StillFresh">Why StillFresh</a>
+                     </li>
+                    <li class="nav-item col-sm-12 col-md-2">
+                        <a href="#About-StillFresh">About StillFresh</a>
+                    </li>
+                    <li class="nav-item col-sm-12 col-md-2">
+                        <a href="#Register">Sign up/ Sign in</a>
+                    </li>
+                    <li class="nav-item col-sm-12 col-md-2">
+                        <a href="#Cooking-for-fun">Cooking For Fun</a>
+                    </li>
+                    <li class="nav-item col-sm-12 col-md-2">
+                        <a href="#Download-the-App">Download the App</a>
+                    </li>
+                </ul>
+                </div>
+            </div>
         </nav>
     </header>
 
@@ -100,9 +108,14 @@
     </section>
 
     <div class="container" id="registration-container">
+        <div class="row registration-container-category">
+            <h2 class="col register-title">Register as food growers/suppliers</h2>
+            <h2 class="col register-title">Register as users</h2>
+            <h2 class="col register-title">Register as volunteer</h2>
+        </div>
+
         <div class="row">
             <div class="col">
-                <h2 class="register-title">Register as food growers/suppliers</h2>
                 <form class="register" action="">
                     <ul>
                         <li>
@@ -156,7 +169,6 @@
             </div>
         
             <div class="col">
-                <h2 class="register-title">Register as users</h2>
                 <form class="register" action="">
                     <ul>
                         <li>
@@ -171,10 +183,7 @@
                             </select>
                         </li>
                         <li>
-                            <input type="text" name="user-surname" id="user-surname" placeholder="Surname">
-                        </li>
-                        <li>
-                            <input type="text" name="user-firstName" id="user-firstName" placeholder="First Name">
+                            <input type="text" name="user-name" id="user-name" placeholder="Last name    First name">
                         </li>
                         <li>
                             <input type="text" name="user-street" id="user-street" placeholder="Street">
@@ -210,7 +219,6 @@
             </div>
 
             <div class="col">
-                <h2 class="register-title">Register as volunteer</h2>
                 <form class="register" action="">
                     <ul>
                         <li>
@@ -225,10 +233,7 @@
                             </select>
                         </li>
                         <li>
-                            <input type="text" name="volunteer-surname" id="volunteer-surname" placeholder="Surname">
-                        </li>
-                        <li>
-                            <input type="text" name="volunteer-firstName" id="volunteer-firstName" placeholder="First Name">
+                            <input type="text" name="volunteer-name" id="user-name" placeholder="Last name    First name">
                         </li>
                         <li>
                             <input type="text" name="volunteer-street" id="volunteer-street" placeholder="Street">
@@ -265,6 +270,20 @@
         </div>
     </div>
 
+<!-- This is the section I try to integrate the API and came across with the backend issue -->
+ <!-- <div class="container" id="Cooking-for-fun">
+            <div class="row">
+                <div class="col">
+                    <h1>Need some inspiration for the food bag you received?</h1>
+                    <input type="text" id="inputFood" placeholder="Enter the list of the food ingredients you received">
+                    <button id="getRecipeBtn">Get Recipe</button>
+                </div>
+                <div class="col">
+                    <p id="recipeResult" placeholder="Here is a recipe that you may never have tried"></p>
+                </div>
+            </div>
+ </div> -->
+
     <footer class="footer">
     <div class="container" id="footer-container">
         <div class="row">
@@ -284,9 +303,9 @@
                 <p>Media inquiry</p>
             </div>
             <div class="col-md-2" id="footer-socialmedia">
-                <p>Facebook</p>
-                <p>Instagram</p>
-                <p>Youtube</p>
+                <a href="">Twitter</a>
+                <a href="">YouTube</a>
+                <a href="">LinkedIn</a>
             </div>
         </div>
     </div>
@@ -297,11 +316,7 @@
 integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
 crossorigin="anonymous"></script>
 
-<script src="final_project_Elaine.js"></script>
+<script type="module" src="final_project_Elaine.js"></script>
 
 </body>
 </html>
-
-<!-- 
-
--->

@@ -23,15 +23,20 @@ body {
 
 .header-nav li {
     list-style: none;
-    color: #E8E9EB; 
 }
 
 .header-nav li a {
-    color: #E8E9EB; 
+    color: #210B2C; 
     text-decoration: none;
 }
 
+.navbar-collapse {
+    flex-grow: 0;
+}
 
+.navbar-brand {
+    margin-left: 20px;
+}
 
 .why-section {
     text-align: center;
@@ -93,6 +98,10 @@ body {
     color:#E8E9EB;
 }
 
+.registration-container-category {
+    display: flex;
+    flex-direction: column;
+}
 
 
 .container ul {
@@ -114,6 +123,10 @@ li.checkbox {
 
 .checkbox a {
     color: #B2E6D4;
+}
+
+#footer-socialmedia a {
+    color: #210B2C;
 }
 
 .row {
@@ -254,5 +267,15 @@ html {
         display: flex;
         flex-direction: column;
         gap: 10px;
+    }
+    .col-md-3 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    #footer-socialmedia {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
     }
 }
