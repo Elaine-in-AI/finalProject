@@ -44,6 +44,19 @@ body {
     color: #B2E6D4;
 }
 
+.big-number {
+    font-size: 100px;
+    color: #B2E6D4;
+}
+
+#greenhouse {
+    margin-left: -45px;
+}
+
+#economy {
+    margin-left: -25px;
+}
+
 .about-section {
     padding-top: 7%;
     padding-bottom: 3%;
